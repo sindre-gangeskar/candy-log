@@ -14,8 +14,8 @@ console.log(SLText(false, 'yellow', 'Warning: This operation may take a while', 
 console.log(SLText(true, 'cyan', 'Success: Operation completed successfully', 'white'));
 ```
 
-![Visual Example]('./Example1.jpg)
 
+![alt text](https://github.com/sindre-gangeskar/sweet-logs/blob/master/Example1.jpg?raw=true)
 ### Note
 For optimal readability, ensure that your 'Minimum Contrast Ratio' setting is adjusted to 1. 
 This adjustment enhances contrast and ensures vibrant colors, offering an improved viewing experience.
