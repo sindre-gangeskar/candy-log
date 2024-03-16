@@ -1,9 +1,9 @@
-# Sweet Log
-Sweet Log is a basic package to help you add basic styles to your terminal. 
+# Fancy Log
+Fancy Log is a basic package to help you add basic styles to your terminal. 
 Example usage would be to log an error with bold text and red color, or a success prompt. 
 
 ## Installation
-npm install sweet-log
+npm install fancy-log
 
 ## Usage
 ```javascript
@@ -14,7 +14,7 @@ console.log(SLText(false, 'yellow', 'Warning: This operation may take a while', 
 console.log(SLText(true, 'cyan', 'Success: Operation completed successfully', 'white'));
 ```
 
-![alt text](https://github.com/sindre-gangeskar/sweet-log/blob/master/example.jpg?raw=true)
+![alt text](https://github.com/sindre-gangeskar/fancy-log/blob/master/example.jpg?raw=true)
 
 ### Note
 To ensure the best readability, adjust your *'Minimum Contrast Ratio'* setting to 1 in your preferred code editor, such as Visual Studio Code or an equivalent, especially for use within your IDE's terminal.
