@@ -1,8 +1,8 @@
 {
-  "name": "fancy-log",
+  "name": "candy-log",
   "version": "1.0.0",
   "description": "Add basic styling to your terminal for easier readability.",
-  "main": "fancy-log.js",
+  "main": "candy-log.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,6 +15,6 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sindre-gangeskar/fancy-log.git"
+    "url": "https://github.com/sindre-gangeskar/candy-log.git"
   }
 }
