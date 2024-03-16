@@ -53,30 +53,3 @@ function SLBackgroundColor(color) {
                return color = '';
     }
 }
-/* 
-console.log(SLText(false, 'red', 'Red text on default background'));
-console.log(SLText(false, 'green', 'Green text on default background'));
-console.log(SLText(false, 'blue', 'Blue text on default background'));
-console.log(SLText(false, 'yellow', 'Yellow text on default background'));
-console.log(SLText(false, 'cyan', 'Cyan text on default background'));
-console.log(SLText(false, 'magenta', 'Magenta text on default background'));
-console.log(SLText(false, 'white', 'White text on default background'));
-console.log(SLText(false, 'black', 'Black text on default background'));
-console.log(SLText(false, 'white', 'White text on black background', 'black'));
-console.log(SLText(false, 'black', 'Black text on white background', 'white')); */
-
-
-console.log(SLText(true, 'red', 'Error: Something went wrong'));
-console.log(SLText(false, 'yellow', 'Warning: This operation may take a while', 'black'));
-console.log(SLText(true, 'black', 'Success: Operation completed successfully', 'green'));
-
-
-/* console.log(SLText(false, 'yellow', 'Yellow text on blue background', 'blue'));
-console.log(SLText(false, 'white', 'White text on green background', 'green'));
-console.log(SLText(false, 'black', 'Black text on magenta background', 'magenta'));
-console.log(SLText(false, 'red', 'Red text on cyan background', 'cyan'));
-console.log(SLText(false, 'green', 'Green text on yellow background', 'yellow')); */
-
-
-
-
