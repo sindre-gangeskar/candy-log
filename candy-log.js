@@ -1,6 +1,6 @@
-function SLText(isBold, color, text, bgColor = '') {
-    color = SLColor(color);
-    bgColor = SLBackgroundColor(bgColor);
+function CLText(isBold, color, text, bgColor = '') {
+    color = CLColor(color);
+    bgColor = CLBackgroundColor(bgColor);
 
     if (isBold === true) {
         text = `\u001b[1m${color}${bgColor}${text}\u001b[0m`;
@@ -9,7 +9,7 @@ function SLText(isBold, color, text, bgColor = '') {
     }
     return text;
 }
-function SLColor(color) {
+function CLColor(color) {
     switch (color) {
         case 'green':
             return color = `\u001b[32m`;
@@ -31,7 +31,7 @@ function SLColor(color) {
             return color = `\u001b[0m`;
     }
 }
-function SLBackgroundColor(color) {
+function CLBackgroundColor(color) {
        switch (color) {
            case 'green':
                return color = `\u001b[42m`;
