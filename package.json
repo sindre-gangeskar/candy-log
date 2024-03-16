@@ -1,8 +1,8 @@
 {
-  "name": "sweet-logs",
-  "version": "1.0.0",
+  "name": "sweet-console",
+  "version": "1.0.1",
   "description": "Add basic styling to your terminal for easier readability.",
-  "main": "sweet-logs.js",
+  "main": "sweet-console.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,6 +15,6 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sindre-gangeskar/sweet-logs.git"
+    "url": "https://github.com/sindre-gangeskar/sweet-console.git"
   }
 }
