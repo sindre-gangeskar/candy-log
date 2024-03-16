@@ -14,7 +14,7 @@ console.log(SLText(false, 'yellow', 'Warning: This operation may take a while', 
 console.log(SLText(true, 'cyan', 'Success: Operation completed successfully', 'white'));
 ```
 
-![alt text](https://github.com/sindre-gangeskar/sweet-log/blob/master/Example1.jpg?raw=true)
+![alt text](https://github.com/sindre-gangeskar/sweet-log/blob/master/example.jpg?raw=true)
 
 ### Note
 To ensure the best readability, adjust your *'Minimum Contrast Ratio'* setting to 1 in your preferred code editor, such as Visual Studio Code or an equivalent, especially for use within your IDE's terminal.
