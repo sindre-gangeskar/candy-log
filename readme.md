@@ -1,4 +1,4 @@
-# Sweet Console
+# Sweet Log
 Sweet Console is a basic package to help you add basic styles to your terminal. 
 Example usage would be to log an error with bold text and red color, or a success prompt. 
 
