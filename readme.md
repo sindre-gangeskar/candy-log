@@ -7,7 +7,7 @@ npm install sweet-logs
 
 ## Usage
 ```javascript
-const { SLText } = require('sweet-logs');
+const { SLText } = require('sweet-console');
 
 console.log(SLText(true, 'red', 'Error: Something went wrong'));
 console.log(SLText(false, 'yellow', 'Warning: This operation may take a while', 'black'));
