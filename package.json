@@ -1,6 +1,6 @@
 {
   "name": "sweet-console",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "description": "Add basic styling to your terminal for easier readability.",
   "main": "sweet-console.js",
   "scripts": {
