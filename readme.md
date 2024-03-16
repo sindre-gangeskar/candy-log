@@ -7,11 +7,16 @@ npm install candy-log
 
 ## Usage
 ```javascript
-const { CLText } = require('candy-log');
 
-console.log(CLText(true, 'red', 'Error: Something went wrong'));
-console.log(CLText(false, 'yellow', 'Warning: This operation may take a while', 'black'));
-console.log(CLText(true, 'cyan', 'Success: Operation completed successfully', 'white'));
+const cl = require('candy-log');  
+/* OR */
+const { CLLog } = require('candy-log');
+
+CLLog(true, 'red', 'Error: Something went wrong');
+CLLog(false, 'yellow', 'Warning: This operation may take a while', 'black');
+CLLog(true, 'cyan', 'Success: Operation completed successfully', 'white');
+
+cl.CLLog(true, 'red', 'Error: Something went wrong');
 ```
 
 ![alt text](https://github.com/sindre-gangeskar/candy-log/blob/master/example.jpg?raw=true)

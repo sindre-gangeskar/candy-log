@@ -16,8 +16,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/sindre-gangeskar/candy-log.git"
-  },
-  "dependencies": {
-    "candy-log": "^1.0.1"
   }
 }
