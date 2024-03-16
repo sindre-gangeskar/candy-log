@@ -7,6 +7,8 @@ function CLText(isBold, color, text, bgColor = '') {
     } else {
         text = `\u001b[0m${color}${bgColor}${text}\u001b[0m`;
     }
+
+    return text;
 }
 function CLColor(color) {
     switch (color) {
