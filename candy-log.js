@@ -61,9 +61,9 @@ function CLBackgroundColor(color) {
  * @param {string} text Text 
  * @param {string} bgColor Background color for text (optional)
  */
-function CLLog(isBold, color, text, bgColor = '') {
+function log(isBold, color, text, bgColor = '') {
     console.log(CLText(isBold, color, text, bgColor));
 }
 module.exports = {
-    CLLog
+    log
 }
