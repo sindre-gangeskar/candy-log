@@ -1,9 +1,9 @@
-# Sweet Logs
-Sweet Logs is a basic package to help you add basic styles to your terminal. 
+# Sweet Console
+Sweet Console is a basic package to help you add basic styles to your terminal. 
 Example usage would be to log an error with bold text and red color, or a success prompt. 
 
 ## Installation
-npm install sweet-logs
+npm install sweet-console
 
 ## Usage
 ```javascript
@@ -14,7 +14,7 @@ console.log(SLText(false, 'yellow', 'Warning: This operation may take a while', 
 console.log(SLText(true, 'cyan', 'Success: Operation completed successfully', 'white'));
 ```
 
-![alt text](https://github.com/sindre-gangeskar/sweet-logs/blob/master/Example1.jpg?raw=true)
+![alt text](https://github.com/sindre-gangeskar/sweet-console/blob/master/example.jpg?raw=true)
 
 ### Note
 For optimal readability, ensure that your 'Minimum Contrast Ratio' setting is adjusted to 1. 
