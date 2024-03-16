@@ -14,7 +14,7 @@ console.log(SLText(false, 'yellow', 'Warning: This operation may take a while', 
 console.log(SLText(true, 'cyan', 'Success: Operation completed successfully', 'white'));
 ```
 
-![Visual Example]('./Example1.jpg)
+![Visual Example]('Example1.jpg)
 
 ### Note
 For optimal readability, ensure that your 'Minimum Contrast Ratio' setting is adjusted to 1. 
