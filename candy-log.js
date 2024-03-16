@@ -53,3 +53,5 @@ function CLBackgroundColor(color) {
                return color = '';
     }
 }
+
+module.exports = CLText;
