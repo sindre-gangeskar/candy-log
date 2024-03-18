@@ -1,17 +1,14 @@
-# Candy Log
-[![Downloads](https://badgen.net/npm/dt/candy-log)](https://www.npmjs.com/package/candy-log)
-
-Candy Log simplifies the process of styling your terminal logs. It offers four predefined options: 
-   
+# Candy Log [![Downloads](https://badgen.net/npm/dt/candy-log)](https://www.npmjs.com/package/candy-log)
+> ### An easy to use utility for logging your terminal logs in style.
     - success
     - error 
     - warning
     - log
-
+---
 While the success, error, and warning presets come with predefined color codes for standard conventions, the log option provides full customization, allowing you to tailor your log's styles according to your preferences.
 
 ## Installation
-npm install candy-log
+<pre>npm install candy-log</pre>
 
 ## Usage
 ```javascript
@@ -33,21 +30,21 @@ c.error(errorMessage, false, true, errorStack);
 c.warning(warningMessage, true, false, 'Available space: 2.5GB');
 ```
 ### Demo 1
-![alt text](https://github.com/sindre-gangeskar/candy-log/blob/master/example1.png?raw=true)
+![Demo Image 1](https://github.com/sindre-gangeskar/candy-log/blob/master/example1.png?raw=true)
 
 ### Demo 2
-![alt text](https://github.com/sindre-gangeskar/candy-log/blob/master/example2.png?raw=true)
+![Demo Image 2](https://github.com/sindre-gangeskar/candy-log/blob/master/example2.png?raw=true)
 
 ### Available Colors
 
-- 'green'
-- 'blue'
-- 'red'
-- 'magenta'
-- 'cyan'
-- 'yellow'
-- 'black'
-- 'white'
+> 'green'  
+> 'blue'  
+> 'red'  
+> 'magenta'  
+> 'cyan'  
+> 'yellow'  
+> 'black'  
+> 'white'  
 
 
 ### Note
