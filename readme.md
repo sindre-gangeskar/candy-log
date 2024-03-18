@@ -29,8 +29,8 @@ c.error(errorMessage, false, true, errorStack);
 c.warning(warningMessage, true, false, 'Available space: 2.5GB');
 ```
 
-![alt text]([https://github.com/sindre-gangeskar/candy-log/blob/master/example1.png?raw=true])
-![alt text]([https://github.com/sindre-gangeskar/candy-log/blob/master/example2.png?raw=true])
+![alt text]([https://raw.githubusercontent.com/sindre-gangeskar/candy-log/master/example1.png])
+![alt text]([https://raw.githubusercontent.com/sindre-gangeskar/candy-log/master/example2.png])
 ### Available Colors
 
 'green'
