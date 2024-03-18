@@ -1,7 +1,7 @@
 {
   "name": "candy-log",
-  "version": "1.0.5",
-  "description": "Add basic styling to your terminal for easier readability.",
+  "version": "1.1.0",
+  "description": "Add styling to your terminal.",
   "main": "candy-log.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,7 +9,9 @@
   "keywords": [
     "terminal",
     "styling",
-    "colors"
+    "colors",
+    "console",
+    "log"
   ],
   "author": "Sindre Gangeskar",
   "license": "ISC",

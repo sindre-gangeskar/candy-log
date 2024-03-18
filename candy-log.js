@@ -1,16 +1,101 @@
-function CLText(isBold, color, text, bgColor = '') {
-    color = CLColor(color);
-    bgColor = CLBackgroundColor(bgColor);
+class Candy {
 
-    if (isBold === true) {
+    /**
+     * 
+     * @param {string} text Text 
+     * @param {*} bold Make the text bold
+     * @param {*} color Color for text
+     * @param {*} bgColor Background color
+     * @param  {...any} args Additional arguments
+     */
+    static log(text, bold = false, color, bgColor, ...args) {
+        console.log(candyText(text, bold, color, bgColor), candyText(args, bold, color, bgColor));
+    }
+    /**
+     * @param {string} text Text
+     * @param {boolean} bold Make the text bold
+     * @param  {...any} args Additional arguments
+     */
+    static success(text, bold = false, background = false, ...args) {
+        const color = 'green';
+        let bgColor = 'black';
+        background = background === true ? bgColor = 'black' : bgColor = '';
+        console.log(candyText(text, bold, color, bgColor), candyText(args, bold, color, bgColor));
+    }
+    /**
+ * @param {string} text Text
+ * @param {boolean} bold Make the text bold
+ * @param  {...any} args Additional arguments
+ */
+    static error(text, bold = false, background = false, ...args) {
+        const color = 'red';
+        let bgColor = 'black';
+        background = background === true ? bgColor = 'black' : bgColor = '';
+        console.error(candyText(text, bold, color, bgColor), candyText(`\n${args}`, bold, color, bgColor));
+    }
+    /**
+ * @param {string} text Text
+ * @param {boolean} bold Make the text bold
+ * @param  {...any} args Additional arguments
+ */
+    static warning(text, bold = false, background = false, ...args) {
+        const color = 'yellow';
+        let bgColor = 'black';
+        background = background === true ? bgColor = 'black' : bgColor = '';
+        console.warn(candyText(text, bold, color, bgColor), candyText(args, bold, color, bgColor));
+    }
+
+    log(text, bold = false, color, bgColor, ...args) {
+        console.log(candyText(text, bold, color, bgColor), candyText(args, bold, color, bgColor));
+    }
+    /**
+     * @param {string} text Text
+     * @param {boolean} bold Make the text bold
+     * @param  {...any} args additional arguments
+     */
+    success(text, bold = false, background = false, ...args) {
+        const color = 'green';
+        let bgColor = 'black';
+        background = background === true ? bgColor = 'black' : bgColor = '';
+        console.log(candyText(text, bold, color, bgColor), candyText(args, bold, color, bgColor));
+    }
+    /**
+ * @param {string} text Text
+ * @param {boolean} bold Make the text bold
+ * @param  {...any} args additional arguments
+ */
+    error(text, bold = false, background = false, ...args) {
+        const color = 'red';
+        let bgColor = 'black';
+        background = background === true ? bgColor = 'black' : bgColor = '';
+        console.error(candyText(text, bold, color, bgColor), candyText(`\n${args}`, bold, color, bgColor));
+    }
+    /**
+ * @param {string} text Text
+ * @param {boolean} bold Make the text bold
+ * @param  {...any} args additional arguments
+ */
+    warning(text, bold = false, background = false, ...args) {
+        const color = 'yellow';
+        let bgColor = 'black';
+        background = background === true ? bgColor = 'black' : bgColor = '';
+        console.warn(candyText(text, bold, color, bgColor), candyText(args, bold, color, bgColor));
+    }
+}
+function candyText(text, bold, color, bgColor = '') {
+    color = candyColor(color);
+    bgColor = candyBackgroundColor(bgColor);
+
+    if (bold === true) {
         text = `\u001b[1m${color}${bgColor}${text}\u001b[0m`;
+
     } else {
         text = `\u001b[0m${color}${bgColor}${text}\u001b[0m`;
     }
 
     return text;
 }
-function CLColor(color) {
+function candyColor(color) {
     switch (color) {
         case 'green':
             return color = `\u001b[32m`;
@@ -32,7 +117,7 @@ function CLColor(color) {
             return color = `\u001b[0m`;
     }
 }
-function CLBackgroundColor(color) {
+function candyBackgroundColor(color) {
     switch (color) {
         case 'green':
             return color = `\u001b[42m`;
@@ -54,16 +139,6 @@ function CLBackgroundColor(color) {
             return color = '';
     }
 }
-/**
- * 
- * @param {boolean} isBold Make text bold - true / false
- * @param {string} color Text color
- * @param {string} text Text 
- * @param {string} bgColor Background color for text (optional)
- */
-function log(isBold, color, text, bgColor = '') {
-    console.log(CLText(isBold, color, text, bgColor));
-}
 module.exports = {
-    log
+    Candy
 }

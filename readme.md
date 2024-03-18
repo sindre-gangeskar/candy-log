@@ -1,25 +1,48 @@
 # Candy Log
-Candy Log is a basic package to help you add basic styles to your terminal. 
-Example usage would be to log an error with bold text and red color, or a success prompt. 
+Candy Log simplifies the process of styling your terminal logs. It offers four predefined options: 
+   
+    - success
+    - error 
+    - warning
+    - log
+
+While the success, error, and warning presets come with predefined color codes for standard conventions, the log option provides full customization, allowing you to tailor your log's styles according to your preferences.
 
 ## Installation
 npm install candy-log
 
 ## Usage
 ```javascript
+/* Access static class */
+const { Candy } = require('candy-log');  
+Candy.log('Application started', false, 'blue', 'black');
+Candy.success('Payment successful', true, true, 'Payment of $50.00 completed.');
+Candy.error(errorMessage, false, true, errorStack);
+Candy.warning(warningMessage, true, false, 'Available space: 2.5GB');
 
-const cl = require('candy-log');  
-/* OR */
-const { log } = require('candy-log');
-
-log(true, 'red', 'Error: Something went wrong');
-log(false, 'yellow', 'Warning: This operation may take a while', 'black');
-log(true, 'cyan', 'Success: Operation completed successfully', 'white');
-
-cl.log(true, 'red', 'Error: Something went wrong');
+/* Create an instance of the class */
+const { Candy } = require('candy-log');
+const c = new Candy();
+c.log('Application started', false, 'blue', 'black');
+c.success('Payment successful', true, true, 'Payment of $50.00 completed.');
+c.error(errorMessage, false, true, errorStack);
+c.warning(warningMessage, true, false, 'Available space: 2.5GB');
 ```
 
 ![alt text](https://github.com/sindre-gangeskar/candy-log/blob/master/example.jpg?raw=true)
 
+### Available Colors
+
+'green'
+'blue'
+'red'
+'magenta'
+'cyan'
+'yellow'
+'black'
+'white'
+
+
 ### Note
-To ensure the best readability, adjust your *'Minimum Contrast Ratio'* setting to 1 in your preferred code editor, such as Visual Studio Code or an equivalent, especially for use within your IDE's terminal.
+Colors may be affected by how your terminal handles the brightness.
+Changes to those settings may be needed to get good contrasts between the different colors. 
