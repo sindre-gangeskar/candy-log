@@ -1,4 +1,6 @@
 # Candy Log
+[![Downloads](https://badgen.net/npm/dt/candy-log)](https://www.npmjs.com/package/candy-log)
+
 Candy Log simplifies the process of styling your terminal logs. It offers four predefined options: 
    
     - success
