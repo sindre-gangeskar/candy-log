@@ -28,19 +28,22 @@ c.success('Payment successful', true, true, 'Payment of $50.00 completed.');
 c.error(errorMessage, false, true, errorStack);
 c.warning(warningMessage, true, false, 'Available space: 2.5GB');
 ```
+### Example 1
+![alt text](https://github.com/sindre-gangeskar/candy-log/blob/master/example1.png?raw=true)
 
-![alt text]([https://raw.githubusercontent.com/sindre-gangeskar/candy-log/master/example1.png?raw=true])
-![alt text]([https://raw.githubusercontent.com/sindre-gangeskar/candy-log/master/example2.png?raw=true])
+### Example 2
+![alt text](https://github.com/sindre-gangeskar/candy-log/blob/master/example2.png?raw=true)
+
 ### Available Colors
 
-'green'
-'blue'
-'red'
-'magenta'
-'cyan'
-'yellow'
-'black'
-'white'
+- 'green'
+- 'blue'
+- 'red'
+- 'magenta'
+- 'cyan'
+- 'yellow'
+- 'black'
+- 'white'
 
 
 ### Note
