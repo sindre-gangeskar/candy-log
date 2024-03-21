@@ -1,6 +1,6 @@
 {
   "name": "candy-log",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Add styling to your terminal.",
   "main": "candy-log.js",
   "scripts": {
