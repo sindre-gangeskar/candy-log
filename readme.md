@@ -16,7 +16,10 @@ While the success, error, and warning presets come with predefined color codes f
 
 /* Access static class */
 const { Candy } = require('candy-log');  
-Candy.log('Application started', false, 'blue', 'black', ...data);
+const options = {bold: false, color: 'blue', background: 'red'}
+
+Candy.log('Application started', options ...data);
+Candy.log('Application started', null ...data);
 Candy.success('Payment successful', ...data);
 Candy.error(errorMessage, ...data);
 Candy.warning(warningMessage, ...data);
@@ -25,7 +28,9 @@ Candy.warning(warningMessage, ...data);
 /* Create an instance of the class */
 const { Candy } = require('candy-log');
 const c = new Candy();
-c.log('Application started', false, 'blue', 'black', ...data);
+
+c.log('Application started', options ...data);
+c.log('Application started', null ...data);
 c.success('Payment successful', ...data);
 c.error(errorMessage, ...data);
 c.warning(warningMessage, ...data);
