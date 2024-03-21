@@ -7,7 +7,7 @@ Created utilities.js and a format function to properly format the data being pas
 ## Changed
 Changed the way the preset functions work. 
 In prior version you could pass in bold and background options as boolean values, now that's gone
-and they work now by simple passing in the message, then the data to be logged. 
+and they work now by simply passing in the message, then the data to be logged. 
 
 All customization options are accessible by using the log function instead.
 Made this change for simplicity reasons. 
