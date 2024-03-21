@@ -2,32 +2,34 @@ function format(val, indent = 2) {
     if (Array.isArray(val) && val.length > 0) {
         return JSON.stringify(val, null, indent);
     }
-    if (typeof val === 'object' && val !== null)
-        return JSON.stringify(val, null, indent);
+    if (val === null) return val = '';
 
-    if (typeof val === 'number' && val !== null)
+    if (typeof val === 'object')
+        return JSON.stringify(val);
+
+    if (typeof val === 'number')
         return Number(val);
 
-    if (typeof val === 'boolean' && val !== null)
+    if (typeof val === 'boolean')
         return Boolean(val);
 
-    if (typeof val === 'function' && val !== null)
+    if (typeof val === 'function')
         return val;
 
-    if (typeof val === 'string' && val !== null)
+    if (typeof val === 'string')
         return val.toString();
 
     return val;
 }
-function candyText(text, bold, color, bgColor = '') {
+function candyText(text, bold = false, color = '', background = '') {
     color = candyColor(color);
-    bgColor = candyBackgroundColor(bgColor);
+    background = candyBackgroundColor(background);
 
     if (bold === true) {
-        text = `\u001b[1m${color}${bgColor}${text}\u001b[0m`;
+        text = `\u001b[1m${color}${background}${text}\u001b[0m`;
 
     } else {
-        text = `\u001b[0m${color}${bgColor}${text}\u001b[0m`;
+        text = `\u001b[0m${color}${background}${text}\u001b[0m`;
     }
 
     return text;
