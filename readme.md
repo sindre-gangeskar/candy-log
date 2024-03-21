@@ -8,26 +8,27 @@
 While the success, error, and warning presets come with predefined color codes for standard conventions, the log option provides full customization, allowing you to tailor your log's styles according to your preferences.
 
 ## Installation
-<pre>npm install candy-log</pre>
+<pre>npm i candy-log</pre>
 
 ## Usage
 ```javascript
-// EXAMPLE 1
+// Examples
+
 /* Access static class */
 const { Candy } = require('candy-log');  
-Candy.log('Application started', false, 'blue', 'black');
-Candy.success('Payment successful', true, true, 'Payment of $50.00 completed.');
-Candy.error(errorMessage, false, true, errorStack);
-Candy.warning(warningMessage, true, false, 'Available space: 2.5GB');
+Candy.log('Application started', false, 'blue', 'black', ...data);
+Candy.success('Payment successful', ...data);
+Candy.error(errorMessage, ...data);
+Candy.warning(warningMessage, ...data);
 
-// EXAMPLE 2
+
 /* Create an instance of the class */
 const { Candy } = require('candy-log');
 const c = new Candy();
-c.log('Application started', false, 'blue', 'black');
-c.success('Payment successful', true, true, 'Payment of $50.00 completed.');
-c.error(errorMessage, false, true, errorStack);
-c.warning(warningMessage, true, false, 'Available space: 2.5GB');
+c.log('Application started', false, 'blue', 'black', ...data);
+c.success('Payment successful', ...data);
+c.error(errorMessage, ...data);
+c.warning(warningMessage, ...data);
 ```
 ### Demo 1
 ![Demo Image 1](https://github.com/sindre-gangeskar/candy-log/blob/master/example1.png?raw=true)
