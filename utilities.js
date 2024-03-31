@@ -1,15 +1,20 @@
 function format(val, indent = 2) {
     if (Array.isArray(val) && val.length > 0) {
-        return JSON.stringify(val, null, indent);
+        const json = JSON.stringify(val, null, indent);
+        const unquoted = json.replace(/"([^"]+)":/g, "$1:");
+        return unquoted;
     }
     if (val === null) return val = '';
 
-    if (typeof val === 'object')
-        return JSON.stringify(val);
-
-    if (typeof val === 'number')
+    if (typeof val === 'object') {
+        const json = JSON.stringify(val, null, indent);
+        const unquoted = json.replace(/"([^"]+)":/g, '$1:');
+        return unquoted;
+    }
+    if (typeof val === 'number') {
+        console.log('THIS IS A NUMBER');
         return Number(val);
-
+    }
     if (typeof val === 'boolean')
         return Boolean(val);
 

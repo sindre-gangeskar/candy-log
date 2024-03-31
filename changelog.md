@@ -1,7 +1,7 @@
-## [1.2.2] - 2024-03-21
+## [1.3.0] - 2024-04-01
 
 ## Added
-Added declaration file for TypeScript
+Unquoted keys when logging from objects. 
 
 
 

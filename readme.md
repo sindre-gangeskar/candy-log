@@ -18,8 +18,8 @@ While the success, error, and warning presets come with predefined color codes f
 const { Candy } = require('candy-log');  
 const options = {bold: false, color: 'blue', background: 'red'}
 
-Candy.log('Application started', options ...data);
-Candy.log('Application started', null ...data);
+Candy.log('Application started', options, ...data);
+Candy.log('Application started', null, ...data);
 Candy.success('Payment successful', ...data);
 Candy.error(errorMessage, ...data);
 Candy.warning(warningMessage, ...data);
@@ -29,17 +29,17 @@ Candy.warning(warningMessage, ...data);
 const { Candy } = require('candy-log');
 const c = new Candy();
 
-c.log('Application started', options ...data);
-c.log('Application started', null ...data);
+c.log('Application started', options, ...data);
+c.log('Application started', null, ...data);
 c.success('Payment successful', ...data);
 c.error(errorMessage, ...data);
 c.warning(warningMessage, ...data);
 ```
 ### Demo 1
-![Demo Image 1](https://github.com/sindre-gangeskar/candy-log/blob/master/example1.png?raw=true)
+![Demo 1](https://github.com/sindre-gangeskar/candy-log/blob/master/example1.png?raw=true)
 
 ### Demo 2
-![Demo Image 2](https://github.com/sindre-gangeskar/candy-log/blob/master/example2.png?raw=true)
+![Demo 2](https://github.com/sindre-gangeskar/candy-log/blob/master/example2.png?raw=true)
 
 ### Available Colors
 
