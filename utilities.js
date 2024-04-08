@@ -12,7 +12,6 @@ function format(val, indent = 2) {
         return unquoted;
     }
     if (typeof val === 'number') {
-        console.log('THIS IS A NUMBER');
         return Number(val);
     }
     if (typeof val === 'boolean')
